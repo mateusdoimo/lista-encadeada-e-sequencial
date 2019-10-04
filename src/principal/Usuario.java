@@ -16,7 +16,7 @@ public class Usuario implements IElemento{
     }
     
     public String getNome() {
-        return nome;
+        return this.nome;
     }
 
     public void setNome(String nome) {
@@ -37,6 +37,12 @@ public class Usuario implements IElemento{
         final Usuario other = (Usuario) obj;
         return nome.equals(other.getNome());
     }
+    
+    @Override
+    public String toString(){
+        return nome;
+    }
+    
 }
 
 //editado em 15:38

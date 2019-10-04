@@ -12,6 +12,7 @@ package principal;
 public class ListaEncadeada extends Lista{
     private No topo;
     private No aux;
+    private No bef;
     
     /**
      *
@@ -19,38 +20,47 @@ public class ListaEncadeada extends Lista{
      */
     @Override
     public void inserir(IElemento elem){
-        No novo = new No();
+        No novo = new No(elem);
         aux = topo;
         
         if(topo == null){
             topo = novo;
-            topo.setNext(null);
-            topo.setElemento(elem);
             return;
         }
         while(aux.getNext() != null){
             aux = aux.getNext();
         }
-        novo.setElemento(elem);
-        novo.setNext(null);
         aux.setNext(novo);
         
         return;
     }
     @Override
-    public void remover(IElemento elem){
+    public void remover(IElemento elem){        
         if(topo == null){ return; }
-        
+        while(topo == elem){
+            topo = topo.getNext();
+        }
+        aux = topo;
+        while(aux != null){
+            bef = aux;
+            aux = aux.getNext();
+            if(aux.getElemento().equals(elem)){
+                bef.setNext(aux.getNext());
+            }
+            aux = aux.getNext();
+        }
+        return;
     }
     
     @Override
     public void imprimir(){
         if(topo == null){ return; }
         aux = topo;
-        while(aux.getNext() != null){
-            System.out.println(aux.getElemento());
+        while(aux != null){
+            System.out.print(aux.getElemento() + " ");
             aux = aux.getNext();
         }
+        System.out.println("");
         return;
     } 
     

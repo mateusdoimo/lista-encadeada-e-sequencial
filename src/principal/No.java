@@ -13,6 +13,11 @@ public class No {
     private IElemento elemento;
     private No next;
 
+    public No(IElemento elemento) {
+        this.elemento = elemento;
+        this.next = null;
+    }
+
     
     public IElemento getElemento() {
         return elemento;
@@ -29,4 +34,5 @@ public class No {
     public void setNext(No next) {
         this.next = next;
     }
+    
 }

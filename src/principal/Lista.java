@@ -12,8 +12,8 @@ package principal;
 public abstract class Lista implements Imprimivel{
     protected int tamanho;
     
-    public void tamanho(){
-        
+    public int tamanho(){
+        return tamanho;
     } 
     
     public abstract void inserir(IElemento elem);
