@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package principal;
-
 /**
  *
  * @author Mateus
@@ -25,9 +24,20 @@ public class Usuario implements IElemento{
     }
 
     @Override
-    public boolean equals(IElemento elem) {
-       return true;
+    public boolean equals(IElemento obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Usuario other = (Usuario) obj;
+        if (!Objects.equals(this.nome, other.nome)) {
+            return false;
+        }
+        return true;
     }
-
-    
 }
