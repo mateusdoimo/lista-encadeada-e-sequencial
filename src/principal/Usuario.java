@@ -35,10 +35,8 @@ public class Usuario implements IElemento{
             return false;
         }
         final Usuario other = (Usuario) obj;
-        if (!Objects.equals(this.nome, other.nome)) {
-            return false;
-        }
-        return true;
+        return nome.equals(other.getNome());
     }
 }
-//bfshnfdsgsdgnhdgn
+
+//editado em 15:38
