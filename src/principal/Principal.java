@@ -20,7 +20,6 @@ public class Principal {
 	//lista = new ListaEncadeada();
         lista = new ListaSequencial();
         lista.inserir(new Usuario("Marcelo"));
-        lista.imprimir();
         lista.inserir(new Usuario("Joao"));
         lista.inserir(new Usuario("Pedro"));
 	lista.inserir(new Usuario("Gustavo"));

@@ -14,13 +14,13 @@ public class ListaSequencial extends Lista{
     private IElemento aux[];
     public int i;
     /**
-     *
-     * @param elem 
+     * 
+     * @param elem
      */
     
     @Override
     public void inserir(IElemento elem){        
-        int w = 0;
+        int w;
         
         if(data == null){
             data = new IElemento[1];
@@ -51,11 +51,12 @@ public class ListaSequencial extends Lista{
         if(data == null){ return; }
         int j = 0;
         
-        while(!data[j].equals(elem) && data[j] != null){ j++; }
+        while(!(data[j].equals(elem)) && j < i){ j++; }
         
         if(data[j].equals(elem)){
             while(j < i){
-                data[j] = data[j+1];            
+                data[j] = data[j+1];     
+                j++;
             }
         }
         data[i] = null;

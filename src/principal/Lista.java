@@ -13,7 +13,7 @@ public abstract class Lista implements Imprimivel{
     protected int tamanho;
     
     public int tamanho(){
-        return tamanho;
+        return this.tamanho;
     } 
     
     public abstract void inserir(IElemento elem);
