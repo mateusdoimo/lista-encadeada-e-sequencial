@@ -11,8 +11,6 @@ package principal;
  */
 public class ListaSequencial extends Lista{
     private IElemento data[];
-    private IElemento aux[];
-    public int i;
     /**
      * 
      * @param elem
@@ -20,53 +18,64 @@ public class ListaSequencial extends Lista{
     
     @Override
     public void inserir(IElemento elem){        
-        int w;
+        IElemento[] aux;
+        int i, w;
         
         if(data == null){
             data = new IElemento[1];
-            i = 0;
+            data[0] = elem;
             return;
         }
         
+        i = data.length; //i = tamanho do vetor
+        
         if(i > 0){
-            while(data[i] != null){ i++; } //i = tamanho do vetor
-        }
-
-        if(i == 0){
-            data[i] = elem;
-        } else {
-            aux = new IElemento[i+2];
+            aux = new IElemento[i+1];
             for(w = 0; w < i; w++){
                 aux[w] = data[w];
             }
-            aux[i+1] = elem;
-            data = new IElemento[i+2];
-            for(w = 0; w <= i; w++){
+            aux[i] = elem;
+            data = new IElemento[i+1];
+            for(w = 0; w < (i+1); w++){
                 data[w] = aux[w];
             }
-        }
+        }        
+        return;
     }
+    
     @Override
     public void remover(IElemento elem){
         if(data == null){ return; }
-        int j = 0;
+        int i = 0;
         
-        while(!(data[j].equals(elem)) && j < i){ j++; }
+        while(!(data[i].equals(elem)) && i < data.length){ i++; }
         
-        if(data[j].equals(elem)){
-            while(j < i){
-                data[j] = data[j+1];     
-                j++;
+        if(data[i].equals(elem) && i < data.length){
+            if(i == (data.length - 1)){
+                data[i] = null;
+                return;
             }
+            while(i < data.length){
+                if(i == data.length - 1){
+                    data[i] = null;
+                    break;
+                }
+                data[i] = data[i+1];     
+                i++;
+            }
+        } else {
+            System.out.println("Elemento não encontrado");
         }
-        data[i] = null;
     }
+    
     @Override
     public void imprimir(){
         if(data == null){ return; }
         
-        for(int j = 0; j < i; j++){
-            System.out.print(data[j] + ", ,");
+        for(int j = 0; j < data.length; j++){
+            if(data[j] != null){
+                System.out.print(data[j] + " ");
+            }
         }
         System.out.println("");
         return;
