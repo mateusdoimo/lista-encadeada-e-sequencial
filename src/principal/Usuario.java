@@ -44,5 +44,3 @@ public class Usuario implements IElemento{
     }
     
 }
-
-//editado em 15:38
