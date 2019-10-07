@@ -1,7 +1,7 @@
 # Lista encadeada e sequencial
 <h3>Aula Prática 2 - SCC0604 – Programação Orientada a Objetos<br>Prof.	Marcelo	Manzato</h3>
 
-**Alunos:**
+**Alunos:**<br>
 Diego da Silva Parra - 10716550<br>
 Mateus Fernandes Doimo - 10691971<br>
 
