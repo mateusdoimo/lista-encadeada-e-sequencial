@@ -19,14 +19,9 @@ Mateus Fernandes Doimo - 10691971<br>
 
 4. Explique quais (se existir) relacionamentos são do tipo: generalização (herança e interface), associação,	agregação,	composição	e	dependência.<br>
 **R:**<br>
-Generalização:<br>
-Imprimível e Lista; IElemento e Usuário; Lista e ListaSequencial/ListaEncadeada.<br>
-
-Composição:<br>
-ListaEncadeada e Nó<br>
-
-Dependência:<br>
-Principal e ListaEncadeada; ListaEncadeada/ListaSequencial e IElemento; ListaSequencial e Usuário<br>
+Generalização: Imprimível e Lista; IElemento e Usuário; Lista e ListaSequencial/ListaEncadeada.<br>
+Composição: ListaEncadeada e Nó<br>
+Dependência: Principal e ListaEncadeada; ListaEncadeada/ListaSequencial e IElemento; ListaSequencial e Usuário<br>
 
 <br>
 Roteiro: https://ae4.tidia-ae.usp.br/access/content/group/ae9eb563-94f5-41e6-8e25-0d15e645281f/Aula%20Pra%CC%81tica%202.pdf
