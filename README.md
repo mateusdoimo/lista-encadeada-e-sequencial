@@ -1,5 +1,5 @@
 # Lista encadeada e sequencial
-Aula Prática 2 - SCC0604 – Programação Orientada a Objetos<br>
+<h4>Aula Prática 2 - SCC0604 – Programação Orientada a Objetos<h4><br>
 Prof.	Marcelo	Manzato
 <br><br>
 **Alunos:**<br>
