@@ -5,10 +5,15 @@
  */
 package principal;
 
-/**
- *
- * @author Mateus
- */
+/*
+
+Aula Prática 2 - SCC0604 – Programação Orientada a Objetos
+
+Alunos:
+Diego da Silva Parra - 10716550
+Mateus Fernandes Doimo - 10691971
+
+*/
 public class No {
     private IElemento elemento;
     private No next;

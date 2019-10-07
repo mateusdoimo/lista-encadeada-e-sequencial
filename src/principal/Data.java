@@ -7,18 +7,17 @@ package principal;
 
 import java.io.IOException;
 
-/**
- *
- * @author DiegoParra
- */
+/*
+
+Aula Prática 2 - SCC0604 – Programação Orientada a Objetos
+
+Alunos:
+Diego da Silva Parra - 10716550
+Mateus Fernandes Doimo - 10691971
+
+*/
 public class Data implements IElemento{
     private int dia, mes, ano;
-
-    /*public Data() {
-        this.dia = 1;
-        this.mes = 1;
-        this.ano = 1970;
-    }*/
     
     public Data(int dia, int mes, int ano) throws IOException {
         
@@ -40,6 +39,16 @@ public class Data implements IElemento{
         this.ano = ano;
     }
     
+    public boolean data_bix(int yr){
+        if (yr%4 == 0){
+            if(yr%100 == 0){
+                return yr%400 == 0;
+            }
+            else{ return true; }
+        }
+        else{ return false; }
+    }
+    
     @Override
     public String toString() {
         return dia + "/" + mes + "/" + ano;
@@ -47,6 +56,7 @@ public class Data implements IElemento{
 
     @Override
     public boolean equals(IElemento elem) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        Data aux = (Data)elem;
+        return(aux.dia == dia && aux.mes == mes && aux.ano == ano);
     }
 }
