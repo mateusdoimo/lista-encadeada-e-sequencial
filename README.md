@@ -1,9 +1,9 @@
 # Lista encadeada e sequencial
 Aula Prática 2 - SCC0604 – Programação Orientada a Objetos
-
+<br>
 **Alunos:**
-Diego da Silva Parra - 10716550
-Mateus Fernandes Doimo - 10691971
+Diego da Silva Parra - 10716550<br>
+Mateus Fernandes Doimo - 10691971<br>
 
 Questões:
 
