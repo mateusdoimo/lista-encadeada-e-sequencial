@@ -1,13 +1,12 @@
 # Lista encadeada e sequencial
-Aula Prática 2 - SCC0604 – Programação Orientada a Objetos
-Prof.	Marcelo	Manzato
+<h3>Aula Prática 2 - SCC0604 – Programação Orientada a Objetos<br>Prof.	Marcelo	Manzato</h3>
 
-Alunos:
-Diego da Silva Parra - 10716550
-Mateus Fernandes Doimo - 10691971
+**Alunos:**
+Diego da Silva Parra - 10716550<br>
+Mateus Fernandes Doimo - 10691971<br>
 
 
-Questões:
+**Questões:**
 
 1. Quais são os métodos polimórficos do diagrama acima?
 
